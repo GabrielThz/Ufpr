@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo.png">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo.png">
+            <div class="menu1">
+                <ul>
+                    <li><a href="../Principal/Index.html">Inicio</a></li>
+                    <li><a href="../Cadastro reservatório/Index.html">Cadastro reservatório</a></li>
+                    <li><a href="#">Leitura do reservatório</a></li>
+                    <li><a href="../Calibragem/Index.html">Calibragem</a></li>
+                    <li><a href="../Configurações/Index.html">Configurações/ajuda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="imguser.png" alt="Profile Picture">
+            <div class="options">
+                <ul>
+                    <li><a href="../Cadastro/Index.html">Cadastrar</a></li>
+                    <li><a href="../Login/Index.html">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section class="formulario2">
+            <form action="#" method="post">
+                <label for="data">Data:</label><br>
+                <input type="date" id="data" name="data" required><br>
+                <label for="proprietario">Nome do proprioetário</label>
+                <select id="proprietario" name="proprietario" class="proprietario" required>
+                    <option value="">Selecione...</option>
+                </select>
+                <label for="idreservatorio">Id do reservatório</label>
+                <select id="idreservatorio" name="idreservatorio" class="idreservatorio" required>
+                    <option value="">Selecione...</option>
+                </select>
+                <label for="nome_reservatorio">Nome do reservatório</label>
+                <select id="nome_reservatorio" name="nome_reservatorio" class="nome_reservatorio" required>
+                    <option value="">Selecione...</option>
+                </select>
+            </form>
+            <br><br><br><br>
+        </section>
+        <section class="formulario">
+            <form action="#" method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parâmetros (mg/L)</th>
+                            <th>Leitura 1</th>
+                            <th>Leitura 2</th>
+                            <th>Leitura 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50</td>
+                            <td><input type="text" name="leitura1_50"></td>
+                            <td><input type="text" name="leitura2_50"></td>
+                            <td><input type="text" name="leitura3_50"></td>
+                        </tr>
+                        <tr>
+                            <td>200</td>
+                            <td><input type="text" name="leitura1_200"></td>
+                            <td><input type="text" name="leitura2_200"></td>
+                            <td><input type="text" name="leitura3_200"></td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td><input type="text" name="leitura1_300"></td>
+                            <td><input type="text" name="leitura2_300"></td>
+                            <td><input type="text" name="leitura3_300"></td>
+                        </tr>
+                        <tr>
+                            <td>400</td>
+                            <td><input type="text" name="leitura1_430"></td>
+                            <td><input type="text" name="leitura2_430"></td>
+                            <td><input type="text" name="leitura3_430"></td>
+                        </tr>
+                        <tr>
+                            <td>500</td>
+                            <td><input type="text" name="leitura1_503"></td>
+                            <td><input type="text" name="leitura2_503"></td>
+                            <td><input type="text" name="leitura3_503"></td>
+                        </tr>
+
+                        <br>
+
+                    </tbody>
+                </table>
+                <input type="submit" value="Cadastrar">
+                <div class="btnbk"> <input type="voltar" value="Voltar" onclick="history.back()"></button></div>
+                <div class="btncln"> <input type="limpar" value="limpar"
+                        onclick="document.querySelector('form').reset()"></button></div>
+        </section>
+    </main>
+
+    </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        const usuarioSelect = document.querySelector('#usuario');
+
+        usuarioSelect.addEventListener('change', () => {
+        });
+
+    </script>
+
+
+</body>
+
+</html>
